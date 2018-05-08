@@ -1,11 +1,11 @@
 #!/bin/bash
-i=$1
-echo "  # ---------------------------------------------------------------------------"
-echo "  # Org$i: See "Org1" for full specification"
-echo "  # ---------------------------------------------------------------------------"
-echo "  - Name: Org$i"
-echo "    Domain: org$i.example.com"
-echo "    Template:"
-echo "      Count: 2"
-echo "    Users:"
-echo "      Count: 1"  
+
+NOP=$1
+
+#cp profile_configtx.yaml configtx.yaml
+
+#Updating Profiles Section
+for ((i=3; i<=$NOP; i++))
+do
+	echo "                    - *Org$i" >> configtx.yaml
+done
