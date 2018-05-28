@@ -16,5 +16,3 @@ Profiles:
                 - *OrdererOrg
         Consortiums:
             SampleConsortium:
-                    - *Org1
-                    - *Org2
