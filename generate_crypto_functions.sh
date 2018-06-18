@@ -1,5 +1,4 @@
 #!/bin/bash
-#set -x
 
 NOP=$1
 
